@@ -1,12 +1,9 @@
-
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-<h1> NYC Hackathon: Manny & Jon Starter Project: Upload page</h1>
+   <head>
+      <title>File Uploading Form</title>
+   </head>
+   
+   <body>
       <h3>File Upload:</h3>
       Select a file to upload: <br />
       <form action = "showResumeData" method = "post"
@@ -15,5 +12,6 @@
          <br />
          <input type = "submit" value = "Upload File" />
       </form>
-</body>
+   </body>
+   
 </html>

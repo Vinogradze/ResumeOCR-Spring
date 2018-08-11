@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1> NYC Hackathon: Manny & Jon Starter Project: Resume Data Page</h1>
+The data: ${resumeData}
 </body>
 </html>
