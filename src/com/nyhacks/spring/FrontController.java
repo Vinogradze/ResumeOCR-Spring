@@ -16,15 +16,15 @@ public String uploadResume() {
 @RequestMapping("/showResumeData")
 public String resumeData(Model model) {
 	ProcessImage processMe = new ProcessImage();
-	String data = processMe.extractData();
-	data = data.replaceAll("\n", " ");
-	String[]s = data.split("OBJECTIVE | WORK EXPERIENCE | SKILLS | EDUCATION | PROJECTS & ACCOMPLISHMENT");
-	model.addAttribute("candidateInfo",s[0]);
-	model.addAttribute("objective",s[1]);
-	model.addAttribute("workExperience",s[2]);
-	model.addAttribute("skills",s[3]);
-	model.addAttribute("education",s[4]);
-	model.addAttribute("achomplishments",s[5]);
+	String [] data = processMe.extractData();
+	
+	
+	model.addAttribute("candidateInfo",data[0]);
+	model.addAttribute("objective",data[1]);
+	model.addAttribute("workExperience",data[2]);
+	model.addAttribute("skills",data[3]);
+	model.addAttribute("education",data[4]);
+	model.addAttribute("achomplishments",data[5]);
 	return "resume-data";
 }
 

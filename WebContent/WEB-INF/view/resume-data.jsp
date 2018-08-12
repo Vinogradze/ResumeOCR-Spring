@@ -10,12 +10,13 @@
 <body>
 <h1> NYC Hackathon: Manny & Jon Starter Project: Resume Data Page</h1>
 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Data...">
 
-      <table class="table table-striped container">
+      <table id="myTable" class="table table-striped container">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
+      <th scope="col">Category</th>
+      <th scope="col">Data</th>
 
     </tr>
   </thead>
@@ -66,5 +67,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+<script>
+function myFunction() {
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>
 </body>
 </html>

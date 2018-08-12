@@ -5,7 +5,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
    </head>
 <body>
-<h1> NYC Hackathon: Manny & Jon Starter Project Main Page</h1>
+<h1> NYC Hackathon: Manny & Jon</h1>
+	<h2>Resume Image -> Queryable Data</h2>
 <a href="showUpload">Upload Resume Data</a>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
